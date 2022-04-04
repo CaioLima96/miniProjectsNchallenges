@@ -12,28 +12,47 @@
     --grey1: #272F38;
     --grey2: #19202A;
     --grey3: #898F9B;
+    --bgGrey: #efefefa6;
     --orange1: #FC7613;
+}
+
+body {
+    background-color: var(--bgGrey);
 }
 
 ul {
     list-style: none;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-/************************************/
 
 
+/************************************************************************/
 
-#content {
-    width: 500px;
-    height: 500px;
+
+
+#container {
+    max-width: 361px;
+    width: 90%;
+    /* height: 403px; */
     background-color: var(--grey2);
+
     margin: 3.125rem auto;
-    padding: 0.625rem;
+    padding: 2.5rem;
+    border-radius: 25px;
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.attribution a { 
+    color: var(--purple1); 
+}
+
+
+/*============ CONTENT ============*/
 
 #iconStar {
     display: flex;
@@ -43,6 +62,8 @@ ul {
     background-color: var(--grey1);
     border: 1px solid var(--grey1);
     border-radius: 50%;
+
+    margin-bottom: 2.188rem;
 }
 
 #iconStar img {
@@ -53,17 +74,22 @@ ul {
 #textContent p:first-child {
     font-size: 1.5rem;
     color: white;
+    margin-bottom: 1.313rem;
 }
 
 #textContent p:last-child {
+    font-size: 0.813rem;
     color: var(--grey3);
+    margin-bottom: 2rem;
 }
 
 
 #ratingNumbers {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     color: var(--grey3);
+    margin-bottom: 2rem;
 }
 
 #ratingNumbers li {
@@ -74,7 +100,54 @@ ul {
     border-radius: 50%;
 }
 
-#submitBtn {
+#ratingNumbers li:hover {
     color: white;
     background-color: var(--orange1);
+    transition: .5s ease;
+}
+
+#submitBtn {
+    text-align: center;
+    padding: 0.625rem;
+    border-radius: 20px;
+    
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--orange1);
+}
+
+#submitBtn:hover {
+    color: var(--orange1);
+    background-color: white;
+    transition: .5s ease;
+}
+
+
+
+/*============ THANK YOU MESSAGE ============*/
+
+#thankYouMessage {
+    text-align: center;
+}
+
+#ratingMessage {
+    display: inline-block;
+    font-size: 0.813rem;
+    color: var(--orange1);
+    background-color: var(--grey1);
+
+    margin: 2.188rem 0;
+    padding: 0.438rem 1rem;
+    border-radius: 22px;
+}
+
+#thankYouText p:first-child {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1.313rem;
+}
+
+#thankYouText p:last-child {
+    font-size: 0.813rem;
+    color: var(--grey3);
 }
