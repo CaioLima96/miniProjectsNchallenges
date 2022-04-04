@@ -12,6 +12,7 @@
     --grey1: #272F38;
     --grey2: #19202A;
     --grey3: #898F9B;
+    --grey4: #7D8799;
     --bgGrey: #efefefa6;
     --orange1: #FC7613;
 }
@@ -106,6 +107,11 @@ ul {
     transition: .5s ease;
 }
 
+.active {
+    color: white;
+    background-color: var(--grey4) !important;
+}
+
 #submitBtn {
     text-align: center;
     padding: 0.625rem;
@@ -127,6 +133,7 @@ ul {
 /*============ THANK YOU MESSAGE ============*/
 
 #thankYouMessage {
+    /* display: none; */
     text-align: center;
 }
 
