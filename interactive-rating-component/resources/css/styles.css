@@ -26,12 +26,12 @@ ul {
 
 
 
-/************************************/
+/************************************************************************/
 
 
 
-#content {
-    max-width: 391px;
+#container {
+    max-width: 361px;
     width: 90%;
     /* height: 403px; */
     background-color: var(--grey2);
@@ -41,6 +41,9 @@ ul {
     border-radius: 25px;
 }
 
+
+
+/*============ CONTENT ============*/
 
 #iconStar {
     display: flex;
@@ -108,4 +111,18 @@ ul {
     color: var(--orange1);
     background-color: white;
     transition: .5s ease;
+}
+
+
+
+/*============ THANK YOU MESSAGE ============*/
+
+#thankYouMessage {
+    text-align: center;
+}
+
+#ratingMessage {
+    font-size: 0.813rem;
+    color: var(--orange1);
+    background-color: var(--grey1);
 }
