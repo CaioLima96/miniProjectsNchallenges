@@ -62,31 +62,31 @@ body {
     width: 50%;
     max-width: 300px;
 
-    padding: 2.188rem 1.938rem 2rem;
+    padding: 1.875rem 1.938rem 1.688rem;
 }
 
 .descContainer > p:first-child {
     font: 0.875rem Montserrat, sans-serif;
     text-transform: uppercase;
     letter-spacing: 6px;
-    margin-bottom: 1.688rem;
+    margin-bottom: 1.438rem;
 }
 
 .descContainer h1 {
     font-family: Fraunces, sans-serif;
-    margin-bottom: 2.125rem;
+    margin-bottom: 1.75rem;
 }
 
 .descContainer > p:nth-child(3) {
     font: 0.875rem Montserrat, sans-serif;
-    margin-bottom: 2.313rem;
+    margin-bottom: 1.875rem;
 }
 
 .descContainer > div:nth-child(4) {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 }
 
 .descContainer > div:nth-child(4) p:first-child {
