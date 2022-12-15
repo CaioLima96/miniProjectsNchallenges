@@ -10,6 +10,7 @@
 :root {
 
     /*PRIMARY*/
+    --cyan: #3d8168;
     --darkCcyan: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
 
@@ -41,6 +42,7 @@ body {
     border: 1px solid red;
 
     display: flex;
+    flex-wrap: wrap;
 }
 
 .imgContainer {
@@ -79,3 +81,30 @@ body {
     font: 0.875rem Montserrat, sans-serif;
     margin-bottom: 2.313rem;
 }
+
+.descContainer > div:nth-child(4) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.descContainer > div:nth-child(4) p:first-child {
+    font: 2rem Fraunces, sans-serif;
+    color: var(--cyan);
+    margin-right: 1.25rem;
+}
+
+.descContainer > div:nth-child(4) p:last-child {
+    font: 0.813rem Montserrat, sans-serif;
+    color: var(--darkGrayishBlue);
+}
+
+.addToCartBtn {
+    width: 100%;
+    padding: 0.938rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--cyan);
+    color: var(--white);
+} 
