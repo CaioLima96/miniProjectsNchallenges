@@ -11,7 +11,7 @@
 
     /*PRIMARY*/
     --cyan: #3d8168;
-    --darkCcyan: hsl(158, 36%, 37%);
+    --darkCyan: #1A4031;
     --cream: hsl(30, 38%, 92%);
 
     /*NEUTRAL*/
@@ -37,19 +37,19 @@ body {
 /*===========================================================*/
 
 #mainContainer {
-    width: 90%;
-    max-width: 600px;
-    border: 1px solid red;
-
     display: flex;
     flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .imgContainer {
-    width: 50%;
-    max-width: 300px;
+    width: 300px;
     height: 450px;
     line-height: 0%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .imgContainer img {
@@ -59,9 +59,7 @@ body {
 }
 
 .descContainer {
-    width: 50%;
-    max-width: 300px;
-
+    width: 300px;
     padding: 1.875rem 1.938rem 1.688rem;
 }
 
@@ -70,6 +68,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 6px;
     margin-bottom: 1.438rem;
+    color: var(--darkGrayishBlue);
 }
 
 .descContainer h1 {
@@ -80,6 +79,7 @@ body {
 .descContainer > p:nth-child(3) {
     font: 0.875rem Montserrat, sans-serif;
     margin-bottom: 1.875rem;
+    color: var(--darkGrayishBlue);
 }
 
 .descContainer > div:nth-child(4) {
@@ -107,4 +107,17 @@ body {
     border: none;
     background-color: var(--cyan);
     color: var(--white);
-} 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addToCartBtn img {
+    margin-right: 0.625rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--darkCyan);
+}
