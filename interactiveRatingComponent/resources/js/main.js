@@ -1,26 +1,23 @@
 //=========== ACTIVE NUMBER BTN
 
 let numBtn = document.querySelectorAll('.numberBtn')
-console.log(numBtn)
 
 numBtn.forEach(button => {
     button.addEventListener('click', function () {
         numBtn.forEach(btn => btn.classList.remove('active'))
         this.classList.add('active')
+        document.getElementById('submitBtn').classList.remove('deactivated')
     })
 })
 
 
 
-
 //=========== 
-
-
 
 document.getElementById('submitBtn').addEventListener('click', (event) => {
     console.log('Alo')
 
-    let hideContent = document.getElementById('content').style.display = 'none'
+    document.getElementById('content').style.display = 'none'
 
     let showThankYouMessage =  document.getElementById('thankYouMessage').innerHTML = `
 			
