@@ -27,6 +27,21 @@ body {
 
 /*===========================================================*/
 
+header {
+    width: 100%;
+    text-align: left;
+    padding-top: 0.25rem;
+    padding-left:  0.375rem;
+}
+
+header a {
+    color: var(--veryDarkBlue);
+}
+
+header a:hover {
+    font-style: italic;
+}
+
 #mainContainer {
     display: flex;
     flex-wrap: wrap;
@@ -118,6 +133,52 @@ button:focus {
     background-color: var(--darkCyan);
 }
 
+.attribution {     
+    width: 95%;
+    max-width: 600px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 1rem auto;
+    font-size: 11px;
+}
+
+.attribution a:not(.attribution div a) { 
+    color: var(--veryDarkBlue); 
+    margin-left: 0.188rem;
+}
+
+.attribution a:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.attribution div {
+    line-height: 0%;
+    margin-top: -0.125rem;
+    margin-left: 0.313rem;
+}
+
+.attribution div a:first-child {
+    margin-right: 0.125rem;
+}
+
+.attribution img {
+    width: 16px;
+    transition: .5s ease;
+}
+
+.attribution img:hover {
+    transform: scale(1.4);
+}
+
+
+
+/*============================= @MEDIA =============================*/
+
 @media (max-width: 639px) {
 
     #mainContainer {
@@ -152,7 +213,7 @@ button:focus {
     body {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 }
