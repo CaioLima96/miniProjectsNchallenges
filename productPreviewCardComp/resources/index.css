@@ -20,16 +20,7 @@
     --white: hsl(0, 0%, 100%);
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: var(--cream);
 }
 
@@ -74,6 +65,7 @@ body {
 .descContainer h1 {
     font-family: Fraunces, sans-serif;
     margin-bottom: 1.75rem;
+    color: var(--veryDarkBlue);
 }
 
 .descContainer > p:nth-child(3) {
@@ -120,4 +112,47 @@ body {
 button:hover {
     cursor: pointer;
     background-color: var(--darkCyan);
+}
+
+button:focus {
+    background-color: var(--darkCyan);
+}
+
+@media (max-width: 639px) {
+
+    #mainContainer {
+        display: block;
+        width: 95%;
+        max-width: 343px;
+        margin: 2.5rem auto;
+    }
+
+    .imgContainer {
+        width: 100%;
+        height: 240px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .imgContainer img { 
+        object-position: 50% 34%;
+    }
+
+    .descContainer {
+        width: 100%;
+    }
+}
+
+@media (min-width: 640px) {
+
+    html, body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
