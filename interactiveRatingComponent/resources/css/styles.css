@@ -32,7 +32,7 @@ body {
     width: 90%;
     background-color: var(--grey2);
 
-    margin: 3.125rem auto;
+    margin: 3.125rem auto 0.625rem;
     padding: 2.5rem;
     border-radius: 25px;
 }
@@ -140,6 +140,15 @@ body {
 #thankYouText p:last-child {
     font-size: 0.813rem;
     color: var(--grey3);
+}
+
+.backBtn {
+    max-width: 361px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.875rem;
 }
 
 .attribution { 

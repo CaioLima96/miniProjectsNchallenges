@@ -1,12 +1,13 @@
 //=========== ACTIVE NUMBER BTN
 
 let numBtn = document.querySelectorAll('.numberBtn')
+let submitBtn = document.getElementById('submitBtn')
 
 numBtn.forEach(button => {
     button.addEventListener('click', function () {
         numBtn.forEach(btn => btn.classList.remove('active'))
         this.classList.add('active')
-        document.getElementById('submitBtn').classList.remove('deactivated')
+        submitBtn.classList.remove('deactivated')
     })
 })
 
@@ -14,12 +15,14 @@ numBtn.forEach(button => {
 
 //=========== 
 
+let thankYouMessage = document.getElementById('thankYouMessage')
+
 document.getElementById('submitBtn').addEventListener('click', (event) => {
     console.log('Alo')
 
     document.getElementById('content').style.display = 'none'
 
-    let showThankYouMessage =  document.getElementById('thankYouMessage').innerHTML = `
+    return thankYouMessage.innerHTML = `
 			
         <div id="phoneIcon">
             <img src="./assets/img/illustration-thank-you.svg" alt="Phone Icon">
@@ -38,6 +41,16 @@ document.getElementById('submitBtn').addEventListener('click', (event) => {
         </div>
 
     `
+})
 
-    return showThankYouMessage
+
+let content = document.getElementById('content')
+console.log(content)
+
+document.getElementsByClassName('backBtn')[0].addEventListener('click', (event) => {
+    
+    content.style.display = 'block'
+    thankYouMessage.innerHTML = ''
+    submitBtn.classList.add('deactivated')
+    numBtn.forEach(btn => btn.classList.remove('active'))
 })
