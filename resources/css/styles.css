@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    list-style: none;
 }
 
 :root {
@@ -15,24 +16,55 @@ body {
     background-color: var(--bgGrey);
 }
 
-ul {
-    list-style: none;
-}
-
 
 
 /************************************************************************/
 
 body {
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 
-img {
+.rickRoll {
     max-width: 350px;
-    width: 100%;
+    width: 95%;
 }
 
 ul {
-    margin-top: 20px;
+    width: 95%;
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2.25rem auto 1.25rem;
+}
+
+li {
+    width: 100%;
+    max-width: 300px;
+    margin: 0.313rem;
+}
+
+.imgContainer {
+    height: 200px;
+    line-height: 0%;
+    overflow: hidden;
+    margin-bottom: 0.625rem;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+/*============================= @MEDIA =============================*/
+
+@media (max-width: 652px) {
+
+    li:not(li:last-child) {
+        margin-bottom: 1.563rem;
+    }
 }
