@@ -13,6 +13,9 @@ numBtn.forEach(button => {
 
 
 
+
+
+
 //=========== 
 
 let thankYouMessage = document.getElementById('thankYouMessage')
@@ -29,7 +32,7 @@ document.getElementById('submitBtn').addEventListener('click', (event) => {
         </div>
 
         <div id="ratingMessage">
-            <p>You selected 4 out of 5</p>
+            <p>You selected ${document.querySelector('.active').innerHTML} out of 5</p>
         </div>
 
         <div id="thankYouText">
@@ -45,7 +48,6 @@ document.getElementById('submitBtn').addEventListener('click', (event) => {
 
 
 let content = document.getElementById('content')
-console.log(content)
 
 document.getElementsByClassName('backBtn')[0].addEventListener('click', (event) => {
     
