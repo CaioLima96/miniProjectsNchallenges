@@ -10,16 +10,10 @@ product preview card component just using: HTML and CSS.
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+- [Link](#link)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
- <br>
+<br>
 
 ***
 
@@ -40,9 +34,13 @@ Users should be able to:
 
 ### Screenshots
 
-<img src="../assets/img/screenshots/productPreviewCardComp01.jpg" width="500" alt="Product Preview Card Component">
-<img src="../assets/img/screenshots/productPreviewCardComp02.jpg" width="500" alt="Product Preview Card Component">
+<img src="../assets/img/screenshots/productPreviewCardComp01.jpg" width="600" alt="Product Preview Card Component">
+<img src="../assets/img/screenshots/productPreviewCardComp02.jpg" width="600" alt="Product Preview Card Component">
 <img src="../assets/img/screenshots/productPreviewCardComp03.jpg" width="300" alt="Product Preview Card Component">
+
+<br>
+
+***
 
 <br>
 
@@ -50,3 +48,13 @@ Users should be able to:
 
 - <a href = "https://miniprojectsnchallenges.netlify.app/productpreviewcardcomp/">My Solution</a>
 - <a href= "https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa">Frontend Mentor challenge page</a>
+
+<br>
+
+***
+
+<br>
+
+## Author
+
+- [Caio Vieira de Castro Lima](https://www.linkedin.com/in/caiovieiralima/)
