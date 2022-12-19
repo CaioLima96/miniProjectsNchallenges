@@ -1,4 +1,4 @@
-# Product Preview Card Component
+# Interactive Rating Component
 
 Hi, this is my solution for Frontend Mentor's challenge. This is a simple challenge that is about to make an 
 Interactive Rating Component just using: HTML, CSS and JS.
