@@ -20,6 +20,7 @@ let thankYouMessage = document.getElementById('thankYouMessage')
 document.getElementById('submitBtn').addEventListener('click', (event) => {
 
     document.getElementById('ratingContent').style.display = 'none'
+    document.getElementsByClassName('backBtn')[0].style.display = 'block'
 
     return thankYouMessage.innerHTML = `
 			
@@ -54,4 +55,5 @@ document.getElementsByClassName('backBtn')[0].addEventListener('click', (event) 
     thankYouMessage.innerHTML = ''
     submitBtn.classList.add('deactivated')
     numBtn.forEach(btn => btn.classList.remove('active'))
+    document.getElementsByClassName('backBtn')[0].style.display = 'none'
 })

@@ -169,6 +169,7 @@ main {
     text-align: left;
     cursor: pointer;
     font-size: 0.875rem;
+    display: none;
 }
 
 .backBtn:hover {
