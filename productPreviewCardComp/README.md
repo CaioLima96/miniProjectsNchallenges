@@ -40,10 +40,9 @@ Users should be able to:
 
 ### Screenshots
 
-<img src="./assets/img/screenshots/productPreviewCardComp01.jpg" width="700" alt="Product Preview Card Component">
-<img src="./assets/img/screenshots/productPreviewCardComp02.jpg" width="700" alt="Product Preview Card Component">
-<img src="./assets/img/screenshots/productPreviewCardComp03.jpg" width="700" alt="Product Preview Card Component">
-
+<img src="../assets/img/screenshots/productPreviewCardComp01.jpg" width="500" alt="Product Preview Card Component">
+<img src="../assets/img/screenshots/productPreviewCardComp02.jpg" width="500" alt="Product Preview Card Component">
+<img src="../assets/img/screenshots/productPreviewCardComp03.jpg" width="300" alt="Product Preview Card Component">
 
 <br>
 
