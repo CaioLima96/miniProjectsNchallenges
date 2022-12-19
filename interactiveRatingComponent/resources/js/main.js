@@ -13,15 +13,11 @@ numBtn.forEach(button => {
 
 
 
-
-
-
-//=========== 
+//=========== Thank You Message
 
 let thankYouMessage = document.getElementById('thankYouMessage')
 
 document.getElementById('submitBtn').addEventListener('click', (event) => {
-    console.log('Alo')
 
     document.getElementById('content').style.display = 'none'
 
@@ -46,6 +42,9 @@ document.getElementById('submitBtn').addEventListener('click', (event) => {
     `
 })
 
+
+
+//=========== BACK BTN
 
 let content = document.getElementById('content')
 
