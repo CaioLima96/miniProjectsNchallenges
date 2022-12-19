@@ -43,12 +43,16 @@ header a:hover {
     font-style: italic;
 }
 
+main {
+    width: 100%;
+}
+
 #container {
     max-width: 361px;
     width: 90%;
     background-color: var(--grey2);
 
-    margin: 3.125rem auto 0.625rem;
+    margin: 0 auto 0.625rem;
     padding: 2.5rem;
     border-radius: 25px;
 }
@@ -167,6 +171,10 @@ header a:hover {
     font-size: 0.875rem;
 }
 
+.backBtn:hover {
+    font-style: italic;
+}
+
 .attribution {     
     width: 95%;
     max-width: 600px;
@@ -206,4 +214,31 @@ header a:hover {
 
 .attribution img:hover {
     transform: scale(1.4);
+}
+
+
+
+/*============================= @MEDIA =============================*/
+
+@media (max-width: 639px) {
+
+    #container {
+        margin-top: 2.5rem;
+    }
+}
+
+
+@media (min-width: 640px) {
+
+    html, body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
