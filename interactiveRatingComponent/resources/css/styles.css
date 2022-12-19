@@ -167,12 +167,16 @@ main {
     width: 90%;
     margin: 0 auto;
     text-align: left;
-    cursor: pointer;
     font-size: 0.875rem;
     display: none;
 }
 
-.backBtn:hover {
+.backBtn p {
+    display: inline-block;
+}
+
+.backBtn p:hover {
+    cursor: pointer;
     font-style: italic;
 }
 
