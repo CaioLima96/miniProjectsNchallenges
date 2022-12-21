@@ -21,8 +21,6 @@ product preview card component just using: HTML and CSS.
 
 ## Overview
 
-<br>
-
 ### The challenge
 
 Users should be able to:
@@ -50,9 +48,6 @@ Users should be able to:
 - <a href= "https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa">Frontend Mentor challenge page</a>
 
 <br>
-
-***
-
 <br>
 
 ## Author
