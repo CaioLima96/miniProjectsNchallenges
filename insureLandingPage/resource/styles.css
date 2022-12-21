@@ -9,6 +9,7 @@
 :root {
 
     --bgGrey: #efefefa6;
+    --grey1: hsl(0deg 0% 70%);
 
     /*PRIMARY*/
     --darkViolet: hsl(256, 26%, 20%);
@@ -53,6 +54,7 @@ body {
     padding: 0.625rem 2.5rem;
     font-size: 1rem;
     background-color: transparent;
+    text-transform: uppercase;
 }
 
 
@@ -162,7 +164,6 @@ header .defaultButton:hover {
     position: absolute;
     left: 0;
     top: 423px;
-    /* bottom: -170px; */
 }
 
 #heroImg > .imgContainer:last-child{
@@ -179,5 +180,82 @@ header .defaultButton:hover {
 main {
     width: 90%;
     max-width: 1110px;
-    margin: 10rem auto 2rem;
+    margin: 19.063rem auto 2rem;
+}
+
+main hr {
+    width: 152px;
+    height: 1px;
+    border-color: transparent;
+    background-color: var(--grey1);
+}
+
+main h1 {
+    margin-top: 2.813rem;
+    margin-bottom: 5rem;
+    font: 4.063rem DM Serif Display, sans-serif;
+}
+
+#differential {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#differential li {
+    width: 100%;
+    max-width: 350px;
+}
+
+#differential li .imgContainer {
+    width: 80px;
+    margin-bottom: 1.625rem;
+}
+
+#differential li p:nth-child(2) {
+    font: 1.25rem DM Serif Display, sans-serif;
+    margin-bottom: 0.75rem;
+}
+
+#differential li p:last-child{
+    font-family: Karla, sans-serif;
+    color: var(--darkGrayishViolet);
+    line-height: 1.5rem;
+}
+
+#aboutWork {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 166px;
+    padding: 3.125rem 5rem;
+    background-color: var(--darkViolet);
+    color: var(--veryLightGray);
+
+    background-image: url('../assets/img/bg-pattern-how-we-work-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: 102% 0px;
+    background-size: 37%;
+}
+
+#aboutWork p {
+    width: 100%;
+    max-width: 393px;
+    font: 2.813rem DM Serif Display, sans-serif;
+    line-height: 2.75rem;
+}
+
+#aboutWork .defaultButton {
+    font-family: Karla, sans-serif;
+    font-weight: 700;
+    color: var(--veryLightGray);
+    border-color: var(--veryLightGray);
+}
+
+#aboutWork .defaultButton:hover {
+    color: var(--darkViolet);
+    background-color: var(--veryLightGray);
+    cursor: pointer;  
 }
