@@ -52,10 +52,12 @@ body {
     border: 1px solid;
     padding: 0.625rem 2.5rem;
     font-size: 1rem;
+    background-color: transparent;
 }
 
 
-/*===========================================================*/
+
+/*============================= HEADER =============================*/
 
 header nav {
     display: flex;
@@ -105,4 +107,77 @@ header .defaultButton:hover {
     color: var(--veryLightGray);
     background-color: var(--veryDarkViolet);
     cursor: pointer;
+}
+
+
+
+/*============================= HERO IMG =============================*/
+
+#heroImg {
+    width: 100%;
+    height: 600px;
+    padding: 6.563rem 0 7.938rem;
+    background-color: var(--darkViolet);
+    /* border: 1px solid red; */
+
+    position: relative;
+}
+
+#presentation {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    color: var(--veryLightGray);
+    /* border: 1px solid blue; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#presentation > div {
+    /* border: 1px solid red; */
+    width: 540px;
+}
+
+#presentation p:first-child {
+    font: 4.5rem DM Serif Display, sans-serif;
+}
+
+#presentation p:nth-child(2) {
+    font-family: Karla, sans-serif;
+}
+
+#presentation .defaultButton {
+    color: var(--veryLightGray);
+    border-color: var(--veryLightGray);;
+}
+
+#presentation .imgContainer {
+    width: 542px;
+}
+
+#heroImg > .imgContainer:nth-child(2) {
+    width: 195px;
+    position: absolute;
+    left: 0;
+    top: 423px;
+    /* bottom: -170px; */
+}
+
+#heroImg > .imgContainer:last-child{
+    width: 380px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+/*============================= MAIN =============================*/
+
+main {
+    width: 90%;
+    max-width: 1110px;
+    margin: 10rem auto 2rem;
 }
