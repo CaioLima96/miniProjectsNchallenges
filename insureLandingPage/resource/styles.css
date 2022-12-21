@@ -8,6 +8,8 @@
 
 :root {
 
+    --bgGrey: #efefefa6;
+
     /*PRIMARY*/
     --darkViolet: hsl(256, 26%, 20%);
     --grayishBlue: hsl(216, 30%, 68%);
@@ -18,6 +20,89 @@
     --veryLightGray:hsl(0, 0%, 98%);
 }
 
+body {
+    background-color: var(--veryLightGray);
+}
+
+
+
+/*============================= GLOBAL CLASSES =============================*/
+
+.imgContainer {
+    line-height: 0%;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.break-column {
+    flex-basis: 100%;
+    width: 0;
+}
+
+.defaultButton {
+    border: 1px solid;
+    padding: 0.625rem 2.5rem;
+    font-size: 1rem;
+}
 
 
 /*===========================================================*/
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    font-family: Karla, sans-serif;
+    /* border: 1px solid red; */
+}
+
+header span {
+    flex: 1;
+}
+
+header .imgContainer {
+    width: 111px;
+}
+
+header ul {
+    display: flex;
+    white-space: nowrap;
+    font-weight: 700;
+    color: var(--darkGrayishViolet);
+}
+
+header li {
+    padding: 1.563rem 1rem;
+}
+
+header li:hover {
+    color: var(--veryDarkViolet);
+    cursor: pointer;
+}
+
+header .defaultButton {
+    font-family: Karla, sans-serif;
+    font-weight: 700;
+    color: var(--veryDarkViolet);
+    background-color: var(--veryLightGray);
+}
+
+header .defaultButton:hover {
+    color: var(--veryLightGray);
+    background-color: var(--veryDarkViolet);
+    cursor: pointer;
+}
