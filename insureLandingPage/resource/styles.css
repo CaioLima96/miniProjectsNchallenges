@@ -431,8 +431,34 @@ footer > div div ul li:not(li:last-child) {
         text-align: center;
     }
 
+    footer > div > ul:nth-child(2) {
+        margin-top: 2.25rem;
+    }
+
     footer span {
         width: 100%;
         flex-basis: initial !important;
     }
+
+    footer > div > div ul {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 835px) {
+
+    #aboutWork {
+        background-image: url('../assets/img/bg-pattern-how-we-work-mobile.svg');
+        background-size: initial;
+        justify-content: center;
+        text-align: center;
+        padding: 5rem 2.25rem;
+    }
+
+    #aboutWork p {
+        width: 100%;
+        max-width: initial;
+        margin-bottom: 2.875rem;
+    }
+    
 }
