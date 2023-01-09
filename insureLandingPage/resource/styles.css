@@ -79,18 +79,24 @@ header span {
     flex: 1;
 }
 
-header .imgContainer {
+nav > div:first-child .imgContainer:first-child {
     width: 111px;
 }
 
-header ul {
+nav > div:first-child .imgContainer:nth-child(2) {
+    width: 32px;
+    display: none;
+}
+
+#headerNavMenu {
     display: flex;
+    align-items: center;
     white-space: nowrap;
     font-weight: 700;
     color: var(--darkGrayishViolet);
 }
 
-header li {
+#headerNavMenu li:not(li:last-child) {
     padding: 1.563rem 1rem;
 }
 
@@ -104,9 +110,10 @@ header .defaultButton {
     font-weight: 700;
     color: var(--veryDarkViolet);
     background-color: var(--veryLightGray);
+    margin-left: 1.125rem;
 }
 
-header .defaultButton:hover {
+#headerNavMenu .defaultButton:hover {
     color: var(--veryLightGray);
     background-color: var(--veryDarkViolet);
     cursor: pointer;
@@ -334,4 +341,54 @@ footer > div div ul li:hover {
 
 footer > div div ul li:not(li:last-child) {
     margin-bottom: 1rem;
+}
+
+
+
+/* ========================= @MEDIA ========================= */
+
+@media (max-width: 600px) {
+
+    .hideShowHeaderNavMenu {
+        display: block !important;
+    }
+
+    header > div:first-child {
+        border: 1px solid red;
+    }
+
+    header nav {
+        position: relative;
+    }
+
+    nav > div:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    nav > div:first-child .imgContainer:nth-child(2) {
+        display: block;
+    }
+
+    #headerNavMenu {
+        display: none;
+        width: 100%;
+        padding-bottom: 1rem;
+        background-color: #333333 !important;
+        position: absolute;
+        top: 98%;
+        z-index: 3;
+    }
+
+    #headerNavMenu li:not(li:last-child) {
+        color: var(--veryLightGray)
+    }
+
+    #headerNavMenu .defaultButton {
+        margin: 0 1rem;
+        text-align: center;
+    }
 }

@@ -23,24 +23,31 @@
     <header>
 
         <nav>
-            <div class="imgContainer">
-                <img src="./assets/img/logo.svg" alt="logo">
+            <div>
+                <div class="imgContainer">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </div>
+
+                <div class="imgContainer" onclick="myNavBar()">
+                    <img src="./assets/img/icon-hamburger.svg" alt="menuIcon">
+                </div>
             </div>
 
             <span></span>
 
-            <ul>
+            <ul id="headerNavMenu">
                 <li>How do we work</li>
                 <li>Blog</li>
                 <li>Account</li>
+                <li class="defaultButton">View Plans</li>
             </ul>
 
-            <button class="defaultButton">View Plans</button>
+            <!-- <button class="defaultButton">View Plans</button> -->
         </nav>
 
     </header>
 
-    <div id="heroImg">
+    <div id="heroImg" onclick="closeNavBar()">
 
         <!-- <div class="imgContainer">
             <img src="./assets/img/image-intro-desktop.jpg" alt="image-intro-desktop">
@@ -72,7 +79,7 @@
 
     </div>
 
-    <main>
+    <main onclick="closeNavBar()">
 
         <hr>
 
@@ -112,7 +119,7 @@
 
     </main>
 
-    <footer>
+    <footer onclick="closeNavBar()">
 
         <div>
             <div class="imgContainer">
@@ -169,6 +176,8 @@
 
     </footer>
 
+
+    <script src="./resource/main.js"></script>
 </body>
 
 </html>
