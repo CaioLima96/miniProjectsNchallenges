@@ -62,6 +62,10 @@ body {
 
 /*============================= HEADER =============================*/
 
+header {
+    padding: 0 1rem;
+}
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -126,7 +130,8 @@ header .defaultButton {
 #heroImg {
     width: 100%;
     height: 600px;
-    padding: 6.563rem 0 7.938rem;
+    /* padding: 6.563rem 0 7.938rem; */
+    padding-top: 6.563rem;
     background-color: var(--darkViolet);
     /* border: 1px solid red; */
 
@@ -145,9 +150,9 @@ header .defaultButton {
     justify-content: space-between;
 }
 
-#presentation > div {
-    /* border: 1px solid red; */
-    width: 540px;
+#presentation > div:first-child {
+    max-width: 540px;
+    width: 100%;
 }
 
 #presentation p:first-child {
@@ -164,6 +169,8 @@ header .defaultButton {
 }
 
 #presentation .imgContainer {
+    /* max-width: 542px;
+    width: 100%; */
     width: 542px;
 }
 
@@ -347,16 +354,15 @@ footer > div div ul li:not(li:last-child) {
 
 /* ========================= @MEDIA ========================= */
 
-@media (max-width: 600px) {
+@media (max-width: 699px) {
+
+    header {
+        padding: 0;
+    }
 
     .hideShowHeaderNavMenu {
         display: block !important;
     }
-
-    header > div:first-child {
-        border: 1px solid red;
-    }
-
     header nav {
         position: relative;
     }
@@ -379,7 +385,7 @@ footer > div div ul li:not(li:last-child) {
         padding-bottom: 1rem;
         background-color: #333333 !important;
         position: absolute;
-        top: 98%;
+        top: 100%;
         z-index: 3;
     }
 
@@ -390,5 +396,43 @@ footer > div div ul li:not(li:last-child) {
     #headerNavMenu .defaultButton {
         margin: 0 1rem;
         text-align: center;
+    }
+
+    #heroImg {
+        height: auto;
+        padding: 0;
+    }
+
+    #heroImg > .imgContainer {
+        display: none;
+    }
+
+    #presentation > div:first-child {
+        order: 1;
+
+        background-image: url('../assets/img/bg-pattern-intro-left-mobile.svg');
+        background-repeat: no-repeat;
+
+        text-align: center;
+    }
+
+    #presentation .imgContainer {
+        width: 100%;
+    }
+
+    footer {
+        background-image: url('../assets/img/bg-pattern-footer-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    footer > div:first-child {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer span {
+        width: 100%;
+        flex-basis: initial !important;
     }
 }
