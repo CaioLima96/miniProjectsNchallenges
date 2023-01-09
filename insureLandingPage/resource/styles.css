@@ -10,6 +10,7 @@
 
     --bgGrey: #efefefa6;
     --grey1: hsl(0deg 0% 70%);
+    --grey2: #f7f7f7;
 
     /*PRIMARY*/
     --darkViolet: hsl(256, 26%, 20%);
@@ -258,4 +259,56 @@ main h1 {
     color: var(--darkViolet);
     background-color: var(--veryLightGray);
     cursor: pointer;  
+}
+
+
+
+/*============================= FOOTER =============================*/
+
+footer {
+    margin-top: 9.375rem;
+    padding: 4.188rem 0;
+    background-color: var(--grey2);
+}
+
+footer > div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    max-width: 1110px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+footer > div > .imgContainer:first-child {
+    width: 111px;
+}
+
+footer > div > ul:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer > div > ul:nth-child(2) li {
+    width: 24px;
+}
+
+footer > div > ul:nth-child(2) li:not(li:last-child) {
+    margin-right: 0.75rem;
+}
+
+footer hr {
+    margin: 2.25rem 0 3.25rem;
+}
+
+footer > div div p {
+    color: var(--darkGrayishViolet);
+    margin-bottom: 2.5rem;
+}
+
+footer > div div ul li:not(li:last-child) {
+    margin-bottom: 1rem;
 }
