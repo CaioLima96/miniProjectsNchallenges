@@ -244,7 +244,7 @@ main h1 {
     align-items: center;
     flex-wrap: wrap;
 
-    margin-top: 166px;
+    margin: 10.375rem 0;
     padding: 3.125rem 5rem;
     background-color: var(--darkViolet);
     color: var(--veryLightGray);
@@ -280,7 +280,7 @@ main h1 {
 /*============================= FOOTER =============================*/
 
 footer {
-    margin-top: 9.375rem;
+    /* margin-top: 9.375rem; */
     padding: 4.188rem 0;
     background-color: var(--grey2);
 
@@ -447,6 +447,15 @@ footer > div div ul li:not(li:last-child) {
 
 @media (max-width: 835px) {
 
+    main > hr {
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 3.125rem !important;
+        text-align: center;
+    }
+
     #aboutWork {
         background-image: url('../assets/img/bg-pattern-how-we-work-mobile.svg');
         background-size: initial;
@@ -461,4 +470,23 @@ footer > div div ul li:not(li:last-child) {
         margin-bottom: 2.875rem;
     }
     
+}
+
+@media (max-width: 1166px) {
+
+    #differential {
+        justify-content: center;
+    }
+
+    #differential li:not(li:last-child) {
+        margin-bottom: 3.75rem;
+    }
+
+    #differential li {
+        text-align: center;
+    }
+    
+    #differential li .imgContainer {
+       margin: 0 auto 1.625rem;
+    }
 }
