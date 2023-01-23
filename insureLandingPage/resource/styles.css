@@ -157,10 +157,14 @@ header .defaultButton {
 
 #presentation p:first-child {
     font: 4.5rem DM Serif Display, sans-serif;
+    margin-bottom: 1.25rem;
+    line-height: 4rem;
 }
 
 #presentation p:nth-child(2) {
     font-family: Karla, sans-serif;
+    margin-bottom: 2.5rem;
+    line-height: 1.5rem;
 }
 
 #presentation .defaultButton {
@@ -181,11 +185,15 @@ header .defaultButton {
     top: 423px;
 }
 
-#heroImg > .imgContainer:last-child{
+#heroImg > .imgContainer:nth-child(3){
     width: 380px;
     position: absolute;
     top: 0;
     right: 0;
+}
+
+#heroImg > .imgContainer:last-child {
+    display: none;
 }
 
 
@@ -350,8 +358,6 @@ footer > div div ul li:not(li:last-child) {
     margin-bottom: 1rem;
 }
 
-
-
 /* ========================= @MEDIA ========================= */
 
 @media (max-width: 699px) {
@@ -407,6 +413,28 @@ footer > div div ul li:not(li:last-child) {
         display: none;
     }
 
+    #heroImg > .imgContainer:last-child{
+        display: block;
+        width: 118px;
+        position: absolute;
+        right: 0;
+        bottom: -183px;
+    }
+
+    #presentation {
+        justify-content: center;
+    }
+
+    #presentation p:first-child {
+        font-size: 3.125rem;
+        /* margin-bottom: 1.25rem; */
+    }
+
+    /* #presentation p:nth-child(2) {
+        margin-bottom: 2.5rem;
+        line-height: 1.5rem;
+    } */
+
     #presentation > div:first-child {
         order: 1;
 
@@ -414,6 +442,8 @@ footer > div div ul li:not(li:last-child) {
         background-repeat: no-repeat;
 
         text-align: center;
+        padding: 5.625rem 0.875rem;
+        max-width: none;
     }
 
     #presentation .imgContainer {
