@@ -9,6 +9,7 @@ Hi! This site was made to bring together in one place challenges and mini projec
  - Challenges
 	 - [Interactive Rating Component](#interactiveRatingComponent)
      - [Product Preview Card Component](#productPreviewCardComp)
+     - [Insure Landing Page](#insureLandingPage)
  
  <br>
 
@@ -23,3 +24,6 @@ Hi! This site was made to bring together in one place challenges and mini projec
 
 - <a id="productPreviewCardComp" href="https://miniprojectsnchallenges.netlify.app/productpreviewcardcomp">Product Preview Card Component</a>
 <img src="./assets/img/productPreviewCardComp.png" width="300" alt="productPreviewCardComp">
+
+- <a id="productPreviewCardComp" href="https://miniprojectsnchallenges.netlify.app/insurelandingpage/">Insure Landing Page</a>
+<img src="./assets/img/insureLandingPage.png" width="300" alt="insureLandingPage">

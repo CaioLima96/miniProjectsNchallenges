@@ -32,21 +32,16 @@ Users should be able to:
 ### Screenshots
 
 - Desktop
-<br>
-<br>
 <img src="../assets/img/screenshots/insureLandingPage01.jpg" width="500" alt="Insure Landing Page">
 <img src="../assets/img/screenshots/insureLandingPage02.jpg" width="500" alt="Insure Landing Page">
 <img src="../assets/img/screenshots/insureLandingPage03.jpg" width="500" alt="Insure Landing Page">
 <img src="../assets/img/screenshots/insureLandingPage04.jpg" width="500" alt="Insure Landing Page">
 
 <br>
-<br>
 
 - Mobile
-<br>
-<br>
 <img src="../assets/img/screenshots/insureLandingPageMob01.jpg" width="450" alt="Insure Landing Page">
-<img src="../assets/img/screenshots/insureLandingPageMob02.jpg" width="450" alt="Insure Landing Page"><br>
+<img src="../assets/img/screenshots/insureLandingPageMob02.jpg" width="450" alt="Insure Landing Page">
 <img src="../assets/img/screenshots/insureLandingPageMob03.jpg" width="300" alt="Insure Landing Page">
 
 <br>
