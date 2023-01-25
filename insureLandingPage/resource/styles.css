@@ -56,6 +56,9 @@ body {
     font-size: 1rem;
     background-color: transparent;
     text-transform: uppercase;
+
+    font-family: Karla, sans-serif;
+    font-weight: 700;
 }
 
 
@@ -76,7 +79,6 @@ header nav {
     max-width: 1110px;
     margin: 0 auto;
     font-family: Karla, sans-serif;
-    /* border: 1px solid red; */
 }
 
 header span {
@@ -110,8 +112,6 @@ header li:hover {
 }
 
 header .defaultButton {
-    font-family: Karla, sans-serif;
-    font-weight: 700;
     color: var(--veryDarkViolet);
     background-color: var(--veryLightGray);
     margin-left: 1.125rem;
@@ -130,10 +130,8 @@ header .defaultButton {
 #heroImg {
     width: 100%;
     height: 600px;
-    /* padding: 6.563rem 0 7.938rem; */
     padding-top: 6.563rem;
     background-color: var(--darkViolet);
-    /* border: 1px solid red; */
 
     position: relative;
 }
@@ -143,7 +141,6 @@ header .defaultButton {
     max-width: 1110px;
     margin: 0 auto;
     color: var(--veryLightGray);
-    /* border: 1px solid blue; */
 
     display: flex;
     flex-wrap: wrap;
@@ -169,12 +166,16 @@ header .defaultButton {
 
 #presentation .defaultButton {
     color: var(--veryLightGray);
-    border-color: var(--veryLightGray);;
+    border-color: var(--veryLightGray);
+}
+
+#presentation .defaultButton:hover {
+    cursor: pointer;
+    background-color: var(--veryLightGray);
+    color: var(--veryDarkViolet);
 }
 
 #presentation .imgContainer {
-    /* max-width: 542px;
-    width: 100%; */
     width: 542px;
 }
 
@@ -271,8 +272,6 @@ main h1 {
 }
 
 #aboutWork .defaultButton {
-    font-family: Karla, sans-serif;
-    font-weight: 700;
     color: var(--veryLightGray);
     border-color: var(--veryLightGray);
 }
@@ -288,7 +287,6 @@ main h1 {
 /*============================= FOOTER =============================*/
 
 footer {
-    /* margin-top: 9.375rem; */
     padding: 4.188rem 0;
     background-color: var(--grey2);
 
@@ -360,114 +358,7 @@ footer > div div ul li:not(li:last-child) {
 
 /* ========================= @MEDIA ========================= */
 
-/* @media (max-width: 699px) {
 
-    header {
-        padding: 0;
-    }
-
-    .hideShowHeaderNavMenu {
-        display: block !important;
-    }
-    header nav {
-        position: relative;
-    }
-
-    nav > div:first-child {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 1.5rem;
-    }
-
-    nav > div:first-child .imgContainer:nth-child(2) {
-        display: block;
-    }
-
-    #headerNavMenu {
-        display: none;
-        width: 100%;
-        padding-bottom: 1rem;
-        background-color: #333333 !important;
-        position: absolute;
-        top: 100%;
-        z-index: 3;
-    }
-
-    #headerNavMenu li:not(li:last-child) {
-        color: var(--veryLightGray)
-    }
-
-    #headerNavMenu .defaultButton {
-        margin: 0 1rem;
-        text-align: center;
-    }
-
-    #heroImg {
-        height: auto;
-        padding: 0;
-    }
-
-    #heroImg > .imgContainer {
-        display: none;
-    }
-
-    #heroImg > .imgContainer:last-child{
-        display: block;
-        width: 118px;
-        position: absolute;
-        right: 0;
-        bottom: -183px;
-    }
-
-    #presentation {
-        justify-content: center;
-    }
-
-    #presentation p:first-child {
-        font-size: 3.125rem;
-    }
-
-    #presentation > div:first-child {
-        order: 1;
-
-        background-image: url('../assets/img/bg-pattern-intro-left-mobile.svg');
-        background-repeat: no-repeat;
-
-        text-align: center;
-        padding: 5.625rem 0.875rem;
-        max-width: none;
-    }
-
-    #presentation .imgContainer {
-        width: 100%;
-    }
-
-    footer {
-        background-image: url('../assets/img/bg-pattern-footer-mobile.svg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    
-    footer > div:first-child {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    footer > div > ul:nth-child(2) {
-        margin-top: 2.25rem;
-    }
-
-    footer span {
-        width: 100%;
-        flex-basis: initial !important;
-    }
-
-    footer > div > div ul {
-        margin-bottom: 2.5rem;
-    }
-} */
 
 @media (max-width: 835px) {
 
@@ -536,13 +427,7 @@ footer > div div ul li:not(li:last-child) {
 
     #presentation p:first-child {
         font-size: 3.125rem;
-        /* margin-bottom: 1.25rem; */
     }
-
-    /* #presentation p:nth-child(2) {
-        margin-bottom: 2.5rem;
-        line-height: 1.5rem;
-    } */
 
     #presentation > div:first-child {
         order: 1;
@@ -618,6 +503,14 @@ footer > div div ul li:not(li:last-child) {
 
     #presentation .imgContainer {
         display: none;
+    }
+
+    #heroImg > .imgContainer:nth-child(2) {
+        width: 131px;
+    }
+    
+    #heroImg > .imgContainer:nth-child(3) {
+        width: 235px;
     }
 }
 
