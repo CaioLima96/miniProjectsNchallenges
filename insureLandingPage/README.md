@@ -32,10 +32,10 @@ Users should be able to:
 ### Screenshots
 
 - Desktop
-<img src="../assets/img/screenshots/insureLandingPage01.jpg" width="500" alt="Insure Landing Page">
-<img src="../assets/img/screenshots/insureLandingPage02.jpg" width="500" alt="Insure Landing Page">
-<img src="../assets/img/screenshots/insureLandingPage03.jpg" width="500" alt="Insure Landing Page">
-<img src="../assets/img/screenshots/insureLandingPage04.jpg" width="500" alt="Insure Landing Page">
+<img src="../assets/img/screenshots/insureLandingPage01.jpg" width="800" alt="Insure Landing Page">
+<img src="../assets/img/screenshots/insureLandingPage02.jpg" width="800" alt="Insure Landing Page">
+<img src="../assets/img/screenshots/insureLandingPage03.jpg" width="800" alt="Insure Landing Page">
+<img src="../assets/img/screenshots/insureLandingPage04.jpg" width="800" alt="Insure Landing Page">
 
 <br>
 
