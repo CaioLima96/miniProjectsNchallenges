@@ -6,23 +6,35 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     list-style: none;
+    text-decoration: none;
 }
 
 :root {
     --bgGrey: #efefefa6;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--bgGrey);
 }
 
 
-
 /************************************************************************/
 
-body {
+main {
+    width: 95%;
+    max-width: 960px;
     text-align: center;
     padding: 20px 0;
+    margin: 2.25rem auto 1.25rem;
 }
 
 .rickRoll {
@@ -30,22 +42,25 @@ body {
     width: 95%;
 }
 
-ul {
-    width: 95%;
-    max-width: 960px;
+main ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 2.25rem auto 1.25rem;
+    margin-top: 2.25rem;
 }
 
-li {
+main li {
     width: 100%;
     max-width: 300px;
     margin: 0.313rem;
 }
 
-.imgContainer {
+main li a:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+main .imgContainer {
     height: 200px;
     line-height: 0%;
     overflow: hidden;
@@ -58,13 +73,51 @@ li {
     object-fit: contain;
 }
 
+footer {
+    width: 95%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3.125rem auto 0.625rem;
+}
 
+footer p {
+    margin-right: 0.75rem;
+    font-size: 0.875rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer li {
+    line-height: 0%;
+}
+
+footer li:not(li:last-child) {
+    margin-right: 0.375rem;
+}
+
+footer img {
+    width: 16px;
+    transition: .5s ease;
+}
+
+footer img:hover {
+    transform: scale(1.4);
+}
 
 /*============================= @MEDIA =============================*/
 
+
+
 @media (max-width: 652px) {
 
-    li:not(li:last-child) {
+    main li:not(li:last-child) {
         margin-bottom: 1.563rem;
     }
 }
