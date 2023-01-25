@@ -287,7 +287,6 @@ main h1 {
 /*============================= FOOTER =============================*/
 
 footer {
-    padding: 4.188rem 0;
     background-color: var(--grey2);
 
     background-image: url('../assets/img/bg-pattern-footer-desktop.svg');
@@ -303,6 +302,7 @@ footer > div:first-child {
     width: 90%;
     max-width: 1110px;
     margin: 0 auto;
+    padding: 4.188rem 0;
     text-transform: uppercase;
     font-family: Karla, sans-serif;
     font-weight: 700;
@@ -330,7 +330,7 @@ footer > div > ul:nth-child(2) li:not(li:last-child) {
     margin-right: 0.75rem;
 }
 
-footer span {
+footer > div span {
     border-color: transparent;
     background-color: var(--grey1);
     height: 1px !important;
@@ -354,6 +354,56 @@ footer > div div ul li:hover {
 
 footer > div div ul li:not(li:last-child) {
     margin-bottom: 1rem;
+}
+
+footer > span {
+    display: block;
+    width: 90%;
+    max-width: 376px;
+    height: 1px;
+    background-color: #afafaf;
+    margin: 0 auto;
+}
+
+.attribution {     
+    width: 95%;
+    max-width: 600px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 1rem auto 0.625rem;
+    font-size: 11px;
+}
+
+.attribution a:not(.attribution div a) { 
+    color: var(--veryDarkBlue); 
+    margin-left: 0.188rem;
+}
+
+.attribution a:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.attribution div {
+    line-height: 0%;
+    margin-left: 0.313rem;
+}
+
+.attribution div a:first-child {
+    margin-right: 0.125rem;
+}
+
+.attribution img {
+    width: 16px;
+    transition: .5s ease;
+}
+
+.attribution img:hover {
+    transform: scale(1.4);
 }
 
 /* ========================= @MEDIA ========================= */
@@ -482,7 +532,7 @@ footer > div div ul li:not(li:last-child) {
         margin-top: 2.25rem;
     }
 
-    footer span {
+    footer > div span {
         width: 100%;
         flex-basis: initial !important;
     }
