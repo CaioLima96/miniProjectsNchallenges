@@ -1,12 +1,186 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <title>Document</title>
+    <title>Insure Landing Page | Frontend Mentor</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/icon-snappy-process.svg">
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./resource/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+    <header>
+
+        <nav>
+            <div>
+                <div class="imgContainer">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </div>
+
+                <div class="imgContainer" onclick="myNavBar()">
+                    <img src="./assets/img/icon-hamburger.svg" alt="menuIcon">
+                </div>
+            </div>
+
+            <span></span>
+
+            <ul id="headerNavMenu">
+                <li>How do we work</li>
+                <li>Blog</li>
+                <li>Account</li>
+                <li class="defaultButton">View Plans</li>
+            </ul>
+
+            <!-- <button class="defaultButton">View Plans</button> -->
+        </nav>
+
+    </header>
+
+    <div id="heroImg" onclick="closeNavBar()">
+
+        <!-- <div class="imgContainer">
+            <img src="./assets/img/image-intro-desktop.jpg" alt="image-intro-desktop">
+        </div> -->
+
+      
+        <div id="presentation">
+            <div>
+                <p>Humanizing your insurance.</p>
+
+                <p>Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
+
+                <button class="defaultButton">View Plans</button>
+            </div>
+
+            <div class="imgContainer">
+                <img src="./assets/img/image-intro-desktop.jpg" alt="image-intro-desktop">
+            </div> 
+        </div>
     
+
+        <div class="imgContainer">
+            <img src="./assets/img/bg-pattern-intro-left-desktop.svg" alt="bg-pattern-intro-left-desktop">
+        </div>
+
+        <div class="imgContainer">
+            <img src="./assets/img/bg-pattern-intro-right-desktop.svg" alt="bg-pattern-intro-right-desktop">
+        </div>
+
+        <div class="imgContainer">
+            <img src="./assets/img/bg-pattern-intro-right-mobile.svg" alt="bg-pattern-intro-right-desktop">
+        </div>
+
+    </div>
+
+    <main onclick="closeNavBar()">
+
+        <hr>
+
+        <h1>We're different</h1>
+
+        <ul id="differential">
+
+            <li>
+                <div class="imgContainer">
+                    <img src="./assets/img/icon-snappy-process.svg" alt="icon-snappy-process">
+                </div>
+                <p>Snappy Process</p>
+                <p> Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.</p>
+            </li>
+            <li>
+                <div class="imgContainer">
+                    <img src="./assets/img/icon-affordable-prices.svg" alt="icon-affordable-prices">
+                </div>
+                <p>Affordable Prices</p>
+                <p>We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>
+            </li>
+            <li>
+                <div class="imgContainer">
+                    <img src="./assets/img/icon-people-first.svg" alt="icon-people-first">
+                </div>
+                <p>People First</p>
+                <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.</p>
+            </li>
+            
+        </ul>
+
+        <div id="aboutWork">
+            <p>Find out more about how we work</p>
+
+            <button class="defaultButton">How we work</button>
+        </div>
+
+    </main>
+
+    <footer onclick="closeNavBar()">
+
+        <div>
+            <div class="imgContainer">
+                <img src="./assets/img/logo.svg" alt="logo">
+            </div>
+    
+            <ul>
+                <li class="imgContainer"><img src="./assets/img/icon-facebook.svg" alt="icon-facebook"></li>
+                <li class="imgContainer"><img src="./assets/img/icon-twitter.svg" alt="icon-twitter"></li>
+                <li class="imgContainer"><img src="./assets/img/icon-pinterest.svg" alt="icon-pinterest"></li>
+                <li class="imgContainer"><img src="./assets/img/icon-instagram.svg" alt="icon-instagram"></li>
+            </ul>
+    
+            <span class="break"></span>
+            
+            <div id="ourCompany">
+                <p>Our company</p>
+                <ul>
+                    <li>How we work</li>
+                    <li>Why Insure?</li>
+                    <li>View plans</li>
+                    <li>Reviews</li>
+                </ul>
+            </div>
+            
+            <div id="helpMe">
+                <p>Help me</p>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Terms of use</li>
+                    <li>Privacy policy</li>
+                    <li>Cookies</li>
+                </ul>
+            </div>
+        
+            <div id="contact">
+                <p>Contact</p>
+                <ul>
+                    <li>Sales</li>
+                    <li>Support</li>
+                    <li>Live chat</li>
+                </ul>
+            </div>
+    
+            <div id="others">
+                <p>Others</p>
+                <ul>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Licenses</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./resource/main.js"></script>
 </body>
+
 </html>
