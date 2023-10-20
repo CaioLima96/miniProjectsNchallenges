@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(205, 205, 205);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.imgContainer {
+    line-height: 0%;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ========================= MAIN ========================= */
+
+main {
+    width: 90%;
+    max-width: 960px;
+    margin: 5rem auto;
+    border: 1px solid black;
+}
