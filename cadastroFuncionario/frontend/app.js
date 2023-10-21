@@ -34,21 +34,19 @@ app.get('/', function (req, res) {
         script: 'login'
     }
     ))
-
-    // res.render('login')
 });
 
-app.get('/dashboard', function (req, res) {
+app.get('/funcionarios', function (req, res) {
 
     fetch('http://localhost:3000/funcionarios', {method: 'GET'})
     .then(resp => resp.json())
-    .then(resp => res.render('dashboard', 
+    .then(resp => res.render('funcionarios', 
     {
-        layout: 'logged',
+        layout: 'dashboard',
         dados: resp,
-        title: 'Dashboard | Cadastrinator',
-        style: 'dashboard',
-        script: 'dashboard'
+        title: 'Funcionários | Cadastrinator',
+        style: 'funcionarios',
+        script: 'funcionarios'
     }
     ))
 

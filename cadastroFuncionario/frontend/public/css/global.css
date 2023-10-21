@@ -1,6 +1,4 @@
-body {
-    background-color: rgb(205, 205, 205);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 *, *::after, *::before {
     margin: 0;
@@ -8,6 +6,18 @@ body {
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --blue1: #3689C9;
+    --blue2: #dfebf4;
+
+    --gray1: #2d2c2c;
+}
+
+body {
+    background-color: #F6F6F6;
 }
 
 .imgContainer {

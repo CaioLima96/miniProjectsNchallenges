@@ -1,7 +1,7 @@
 // ========================= NAVBAR =========================
 
 let menuBtn = document.getElementsByClassName('navMenuBtn')[0]
-let menu = document.getElementsByClassName('navMenu')[0]
+let menu = document.getElementsByClassName('sideBar')[0]
 
 menuBtn.addEventListener('click', () => {
   console.log(menuBtn)

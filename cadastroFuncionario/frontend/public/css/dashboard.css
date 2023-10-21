@@ -1,29 +1,174 @@
+html,
 body {
-    background-color: #fafafa !important;
-}
-
-main {
-    border: 1px solid black;
-}
-
-/*=========== TABLE ===========*/
-
-.tableContainer {
     width: 100%;
-    overflow: auto;
+    height: 100%;
 }
 
-.tableContainer table {
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: var(--blue1);
+}
+
+header>div:last-child {
+    margin-left: 0.625rem;
+    display: none;
+}
+
+.navMenuLogo {
+    margin-left: 0.625rem;
+}
+
+.navMenuLogo a {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.563rem;
+    color: black;
+}
+
+.navMenuLogo a div {
+    margin-right: 0.438rem
+}
+
+.navMenuLogo a p:hover {
+    font-style: italic;
+}
+
+
+/* ========================= NAVBAR ========================= */
+
+.sideBar {
     width: 100%;
-    border-collapse: collapse;
+    max-width: 236px;
+    margin-right: 1.25rem
 }
 
-.tableContainer td, .tableContainer th {
-    border: 1px solid #626262;
-    text-align: left;
-    padding: 8px;
+.navMenu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #dfebf4;
 }
 
-.tableContainer tr:nth-child(even) {
-    background-color: #dddddd;
+.navMenu .user {
+    display: flex;
+    padding: 0.875rem 0.625rem;
+}
+
+.navMenu .user div:last-child {
+    margin-left: 0.625rem;
+}
+
+.navMenu .user p:first-child {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.188rem;
+}
+
+.navMenu .user p:not(p:first-child) {
+    font-size: 0.875rem;
+}
+
+.sideBar hr {
+    height: 1px;
+    width: 90%;
+    background-color: rgb(217, 217, 217);
+    margin: 0 auto;
+    border: none;
+}
+
+.navMenuList {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 1.875rem;
+}
+
+.navMenuList li {
+    font-weight: bold;
+    width: 100%;
+}
+
+.navMenuList a {
+    padding: 1rem;
+    display: inline-block;
+    color: black;
+    width: 100%;
+}
+
+.navMenuList li:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.navMenuList li:hover a,
+.navMenuList li:hover p {
+    color: var(--blue2);
+}
+
+.navMenu ul:last-child {
+    margin: 0 0px 0.313rem 0.5rem;
+}
+
+.navMenu ul:last-child a {
+    color: var(--gray1);
+}
+
+.navMenu ul:last-child li:hover a {
+    font-style: italic;
+}
+
+
+
+@media (max-width: 600px) {
+
+    header>div:last-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.625rem;
+        margin-left: 0.625rem;
+        display: block;
+    }
+
+    body div:nth-child(2) {
+        position: relative;
+    }
+
+    .sideBar {
+        display: none;
+        position: absolute;
+        z-index: 3;
+        height: 100%;
+    }
+
+    .navMenuList {
+        width: 100%;
+        padding: 0.625rem 0;
+        background-color: #333333 !important;
+    }
+
+    .navMenuList a {
+        color: white;
+        width: 100%;
+    }
+
+    .navMenuList p {
+        /*this is for dark mode button*/
+        color: white;
+    }
+
+    .hideShowNavMenu {
+        display: block !important;
+    }
 }
