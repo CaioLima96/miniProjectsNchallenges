@@ -1,0 +1,29 @@
+body {
+    background-color: #fafafa !important;
+}
+
+main {
+    border: 1px solid black;
+}
+
+/*=========== TABLE ===========*/
+
+.tableContainer {
+    width: 100%;
+    overflow: auto;
+}
+
+.tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableContainer td, .tableContainer th {
+    border: 1px solid #626262;
+    text-align: left;
+    padding: 8px;
+}
+
+.tableContainer tr:nth-child(even) {
+    background-color: #dddddd;
+}

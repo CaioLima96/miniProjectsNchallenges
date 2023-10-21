@@ -1,13 +1,21 @@
 <main>
 
-    <h1>CadFunc</h1>
+    <h1>Login</h1>
 
-    <form action="/teste" method="POST">
+    <div class="imgContainer">
+        <img src="img/icons/753210.png" alt="dDara | Flaticon">
+    </div>
+
+    <form action="/teste2" method="POST">
+        {{!-- action="/teste" method="POST" --}}
 
         <input type="text" placeholder="Digite seu email" name="nome">
         <input type="text" placeholder="Digite sua senha" password="password">
 
-        <input type="submit" value="Entrar" class="submitBtn">
+        {{!-- <input type="submit" value="Entrar" class="submitBtn"> --}}
+        {{!-- <button class="submitBtn" >Entrar</button> --}}
+
+        <a href="/dashboard" class="submitBtn">Entrar</a>
 
     </form>
 

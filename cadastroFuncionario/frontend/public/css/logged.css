@@ -1,0 +1,120 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3689C9;
+}
+
+header > div:last-child {
+    margin-left: 0.625rem;
+    display: none;
+}
+
+
+/* ========================= NAVBAR ========================= */
+
+.navMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    background-color: rgb(150, 176, 96);
+}
+
+.navMenuLogo a {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.563rem;
+    color: black;
+}
+
+.navMenuLogo a div {
+    margin-right: 0.438rem
+}
+
+.navMenuLogo a p:hover {
+    font-style: italic;
+}
+
+.navMenu > div:first-child > div:last-child {
+    display: none;
+}
+
+.navMenuList {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.navMenuList li {
+    font-weight: bold;
+}
+
+.navMenuList a {
+    padding: 1rem;
+    display: inline-block;
+    color: black;
+}
+
+.navMenuList li:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.navMenuList li:hover a, .navMenuList li:hover p{
+    color: #96b060;
+}
+
+@media (max-width: 600px) {
+
+    header > div:last-child{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.625rem;
+        margin-left: 0.625rem;
+        display: block;
+    }
+
+    .navMenu {
+        display: none;
+        position: relative;
+    }
+
+    .navMenuList {
+        /* display: none; */
+        width: 100%;
+        padding: 0.625rem 0;
+        background-color: #333333 !important;
+        position: absolute;
+        top: 98%;
+        z-index: 3;
+    }
+        
+    .navMenuList a {
+        color: white;
+        width: 100%;
+    }
+    
+    .navMenuList p { /*this is for dark mode button*/
+        color: white;
+    }
+    
+    .hideShowNavMenu {
+        display: block !important;
+    }
+}

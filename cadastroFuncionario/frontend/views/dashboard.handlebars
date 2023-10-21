@@ -1,0 +1,70 @@
+<main>
+
+    <h1>Funcionários</h1>
+
+    <div class="filter">
+
+        <select name="ordemFilter" id="ordemFilter">
+            <option selected>Ordem Alfabética</option>
+            <option>--------</option>
+            <option value="ordemCrescente">Crescente</option>
+            <option value="ordemDecrescente">Decrescente</option>
+        </select>
+
+        <select name="statusFilter" id="statusFilter">
+            <option selected>Status</option>
+            <option>--------</option>
+            <option value="statusAdmitido">Admitido</option>
+            <option value="statusDemitido">Demitido</option>
+        </select>
+
+        <select name="dataFiter" id="dataFiter">
+            <option selected>Data</option>
+            <option>--------</option>
+            <option value="dataCrescente">Crescente</option>
+            <option value="dataDecrescente">Decrescente</option>
+        </select>
+
+    </div>
+
+    <div class="tableContainer">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Email</th>
+                    <th>Cargo</th>
+                    <th>Endereço</th>
+                    <th>Cargo</th>
+                    <th>Salário</th>
+                    <th>Status</th>
+                    <th>Data Admissão</th>
+                    <th>Data Demissão</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                {{#each dados}}
+                <tr>
+                    <td>{{nome}}</td>
+                    <td>{{idade}}</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="">Editar</a></td>
+                </tr>
+                {{/each}}
+
+            </tbody>
+        </table>
+    </div>
+
+</main>
