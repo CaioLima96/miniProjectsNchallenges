@@ -23,49 +23,70 @@ app.use(express.static('public'))
 //Rotas
 app.get('/', function (req, res) {
 
-    fetch('http://localhost:3000/funcionarios', {method: 'GET'})
-    .then(resp => resp.json())
-    .then(resp => res.render('login', 
-    {
-        layout: 'main',
-        dados: resp,
-        title: 'Login | Cadastrinator',
-        style: 'login',
-        script: 'login'
-    }
-    ))
+    res.render('login',
+        {
+            layout: 'main',
+            title: 'Login | Cadastrinator',
+            style: 'login',
+            script: 'login'
+        }
+    )
 });
 
-app.get('/funcionarios', function (req, res) {
+app.get('/dashboard/funcionarios', function (req, res) {
 
-    fetch('http://localhost:3000/funcionarios', {method: 'GET'})
-    .then(resp => resp.json())
-    .then(resp => res.render('funcionarios', 
-    {
-        layout: 'dashboard',
-        dados: resp,
-        title: 'Funcionários | Cadastrinator',
-        style: 'funcionarios',
-        script: 'funcionarios'
-    }
-    ))
+    fetch('http://localhost:3000/funcionarios', { method: 'GET' })
+        .then(resp => resp.json())
+        .then(resp => res.render('funcionarios',
+            {
+                layout: 'dashboard',
+                dados: resp,
+                title: 'Funcionários | Cadastrinator',
+                style: 'funcionarios',
+                script: 'funcionarios'
+            }
+        ))
 });
 
-app.get('/cadastrarfuncionario', function (req, res) {
+app.get('/dashboard/cadastrarfuncionario', function (req, res) {
 
-    res.render('cadastrarFuncionario', 
-    {
-        layout: 'dashboard',
-        title: 'Cadastrar Funcionário | Cadastrinator',
-        style: 'cadFuncionario',
-        script: 'cadFuncionario'
+    res.render('cadastrarFuncionario',
+        {
+            layout: 'dashboard',
+            title: 'Cadastrar Funcionário | Cadastrinator',
+            style: 'cadFuncionario',
+            script: 'cadFuncionario'
+        })
+});
+
+app.post('/cadastrarfuncionario', function (req, res) {
+
+    let nome = req.body.nome
+    let idade = req.body.idade
+    let email = req.body.email
+    let cargo = req.body.cargo
+    let endereco = req.body.endereco
+    let salario = req.body.salario
+    let status = req.body.status
+    let dataAdmissao = req.body.dataAdmissao
+
+    let dados = {
+        'nome': nome,
+        'idade': idade,
+        'email': email,
+        'cargo': cargo,
+        'endereco': endereco,
+        'salario': salario,
+        'status': status,
+        'dataAdmissao': dataAdmissao
+    }
+
+    fetch('http://localhost:3000/funcionarios', {
+        method: 'POST',
+        body: JSON.stringify(dados),
+        headers: { 'Content-Type': 'application/json' }
     })
-});
-
-app.post('/teste', function(req, res){
-    res.write('O nome informado: ' + req.body.nome)
-    res.end()
+        .then(res.redirect('/dashboard/funcionarios'))
 })
-
 
 app.listen('8080')

@@ -30,6 +30,16 @@ body {
     object-fit: cover;
 }
 
+.submitBtn {
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 0.65rem 1.375rem 0.5rem;
+    border-radius: 0.313rem;
+    cursor: pointer;
+    border: none;
+    background-color: #9acdf7;
+}
 
 /* ========================= MAIN ========================= */
 
