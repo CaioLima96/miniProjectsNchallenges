@@ -51,24 +51,21 @@ app.get('/funcionarios', function (req, res) {
     ))
 });
 
+app.get('/cadastrarfuncionario', function (req, res) {
+
+    res.render('cadastrarFuncionario', 
+    {
+        layout: 'dashboard',
+        title: 'Cadastrar Funcionário | Cadastrinator',
+        style: 'cadFuncionario',
+        script: 'cadFuncionario'
+    })
+});
 
 app.post('/teste', function(req, res){
     res.write('O nome informado: ' + req.body.nome)
     res.end()
 })
 
-// app.post('/teste', function(req, res){
-//     let nome = req.body.nome
-//     let password = req.body.password
-
-//     let dados = {'nome': nome, 'password': password}
-
-//     fetch('http://localhost:3000/funcionarios',{
-//         method: 'POST',
-//         body: JSON.stringify(dados),
-//         headers: {'Content-Type':'application/json'}
-//     })
-//     .then(res.redirect('/'))
-// })
 
 app.listen('8080')
