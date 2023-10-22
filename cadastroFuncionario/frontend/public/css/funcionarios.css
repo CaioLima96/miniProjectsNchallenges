@@ -2,6 +2,18 @@ body {
     background-color: #fafafa !important;
 }
 
+/*====================== MAIN ======================*/
+
+main {
+    overflow: hidden;
+}
+
+.filter {
+    margin: 0.313rem 0 1.75rem;
+}
+
+
+
 /*=========== TABLE ===========*/
 
 .tableContainer {
@@ -14,10 +26,23 @@ body {
     border-collapse: collapse;
 }
 
+.tableContainer th {
+    white-space: nowrap;
+}
+
 .tableContainer td, .tableContainer th {
     border: 1px solid #626262;
     text-align: left;
+    /* padding: 8px; */
+}
+
+.tableContainer td:not(td:last-child), .tableContainer th:not(th:last-child) {
     padding: 8px;
+}
+
+.tableContainer td:last-child, .tableContainer th:last-child {
+    padding: 0 14px 0 18px;
+    
 }
 
 .tableContainer tr:nth-child(even) {

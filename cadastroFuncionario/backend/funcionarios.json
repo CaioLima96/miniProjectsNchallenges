@@ -1,34 +1,52 @@
 {
-  "funcionarios": [
-    {
-      "nome": "Caio",
-      "idade": 27,
-      "id": 1
-    },
-    {
-      "nome": "Ralf",
-      "idade": 30,
-      "id": 2
-    },
-    {
-      "nome": "Antedegmon",
-      "idade": 69,
-      "id": 3
-    },
-    {
-      "nome": "dfg",
-      "idade": "25",
-      "id": 4
-    },
-    {
-      "nome": "Juão",
-      "idade": "20",
-      "id": 5
-    },
-    {
-      "nome": "json",
-      "idade": "25",
-      "id": 6
-    }
-  ]
+    "funcionarios": [
+        {
+            "id": 1,
+            "nome": "Caio Vieira de Castro Lima",
+            "idade": 27,
+            "email": "makotoraiku@gmail.com",
+            "cargo": "WebDev",
+            "endereco": "R. dos Bobos - Nº0 - RJ",
+            "salario": 8.001,
+            "status": "Admitido",
+            "dataAdmissao": "21/10/2023",
+            "dataDemissao": "----"
+        },
+        {
+            "id": 2,
+            "nome": "Ralf",
+            "idade": 30,
+            "email": "detonaralf@gmail.com",
+            "cargo": "WebDev",
+            "endereco": "Praça XV - Centro, RJ - RJ",
+            "salario": 8.001,
+            "status": "Admitido",
+            "dataAdmissao": "21/10/2023",
+            "dataDemissao": "----"
+        },
+        {
+            "id": 3,
+            "nome": "Yuji Itadori",
+            "idade": 16,
+            "email": "yujiitadori@gmail.com",
+            "cargo": "Feitiçeiro Jujutsu",
+            "endereco": "Tokyo - Japão",
+            "salario": "----",
+            "status": "Admitido",
+            "dataAdmissao": "21/10/2023",
+            "dataDemissao": "----"
+        },
+        {
+            "id": 4,
+            "nome": "JarJar Binks",
+            "idade": 50,
+            "email": "binksjarjar@gmail.com",
+            "cargo": "Lord Sith",
+            "endereco": "Naboo",
+            "salario": 50.000,
+            "status": "Admitido",
+            "dataAdmissao": "21/10/2023",
+            "dataDemissao": "----"
+        }
+    ]
 }

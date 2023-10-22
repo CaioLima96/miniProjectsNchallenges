@@ -49,8 +49,6 @@ app.get('/funcionarios', function (req, res) {
         script: 'funcionarios'
     }
     ))
-
-    // res.render('login')
 });
 
 

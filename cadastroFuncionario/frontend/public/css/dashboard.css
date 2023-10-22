@@ -25,9 +25,6 @@ header>div:last-child {
 
 .navMenuLogo {
     margin-left: 0.625rem;
-}
-
-.navMenuLogo a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -35,20 +32,30 @@ header>div:last-child {
     color: black;
 }
 
-.navMenuLogo a div {
+/* .navMenuLogo a {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.563rem;
+    color: black;
+} */
+
+.navMenuLogo div {
     margin-right: 0.438rem
 }
 
-.navMenuLogo a p:hover {
+/* .navMenuLogo p:hover {
     font-style: italic;
-}
+} */
 
 
 /* ========================= NAVBAR ========================= */
 
 .sideBar {
-    width: 100%;
-    max-width: 236px;
+    /* width: 100%;
+    max-width: 236px; */
+    /* width: 270px; */
+    width: 236px;
     margin-right: 1.25rem
 }
 
@@ -104,6 +111,7 @@ header>div:last-child {
     display: inline-block;
     color: black;
     width: 100%;
+    white-space: nowrap;
 }
 
 .navMenuList li:hover {
@@ -141,7 +149,7 @@ header>div:last-child {
         display: block;
     }
 
-    body div:nth-child(2) {
+    body > div:nth-child(2) {
         position: relative;
     }
 
