@@ -2,7 +2,7 @@
 
 main {
     text-align: center;
-    width: 400px;
+    max-width: 400px;
     padding: 0.188rem 0 0.75rem;
     background-color: white;
     border-radius: 5px;
@@ -35,3 +35,8 @@ form input:not(input:last-child) {
     padding: 0.375rem;
     margin-bottom: 0.5rem;
 }
+
+/* main {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+} */

@@ -57,7 +57,16 @@ header>div:last-child {
     max-width: 236px; */
     /* width: 270px; */
     width: 236px;
-    margin-right: 1.25rem
+    /* margin-right: 1.25rem */
+}
+
+.sideMain {
+    display: flex; 
+    /* height: 100%; */
+}
+
+.sideMainHeight {
+    height: 100%;
 }
 
 .navMenu {

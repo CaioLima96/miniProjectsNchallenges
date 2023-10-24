@@ -6,6 +6,7 @@ body {
 
 main {
     overflow: hidden;
+    padding: 0 20px;
 }
 
 .filter {
@@ -17,8 +18,9 @@ main {
 /*=========== TABLE ===========*/
 
 .tableContainer {
-    width: 100%;
-    overflow: auto;
+    /* width: 100%; */
+    /* overflow: auto; */
+    overflow-x:auto;
     /* border: 1px solid red; */
 }
 

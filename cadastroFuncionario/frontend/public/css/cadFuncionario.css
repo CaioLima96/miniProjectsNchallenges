@@ -23,3 +23,9 @@ form input:not(input:last-child) {
     padding: 6px 6px 6px 10px;
     margin-bottom: 16px;
 }
+
+
+
+.sideMain {
+    height: 100%;
+}
