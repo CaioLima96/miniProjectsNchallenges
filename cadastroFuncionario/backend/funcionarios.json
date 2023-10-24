@@ -59,28 +59,6 @@
       "dataAdmissao": "04/08/1960",
       "dataDemissao": "---",
       "id": 5
-    },
-    {
-      "nome": "a",
-      "idade": "4",
-      "email": "3",
-      "cargo": "4",
-      "endereco": "4",
-      "salario": "4",
-      "status": "4",
-      "dataAdmissao": "4",
-      "id": 6
-    },
-    {
-      "nome": "5",
-      "idade": "5",
-      "email": "5",
-      "cargo": "5",
-      "endereco": "5",
-      "salario": "5",
-      "status": "5",
-      "dataAdmissao": "5",
-      "id": 7
     }
   ]
 }

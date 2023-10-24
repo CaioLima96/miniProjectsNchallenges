@@ -89,4 +89,15 @@ app.post('/cadastrarfuncionario', function (req, res) {
         .then(res.redirect('/dashboard/funcionarios'))
 })
 
+app.get('/dashboard/editarFuncionario', function(req, res) {
+    res.render('editarFuncionario',
+    {
+        layout: 'dashboard',
+        title: 'Editar Funcionario | Cadastrinator',
+        style: 'editarFuncionario',
+        script: 'editarFuncionario'
+    })
+})
+
+
 app.listen('8080')
