@@ -2,4 +2,37 @@
 
     <h1>Editar Funcionário</h1>
     
+    <form action="/editar" method="POST" class="form">
+
+        <input type="text" value={{dados.id}} name="id" readonly="readonly">
+
+        <label for="nome">Nome</label>
+        <input type="text" value={{dados.nome}} name="nome">
+        
+        <label for="idade">Idade</label>
+        <input type="text" value={{dados.idade}} name="idade">
+        
+        <label for="email">Email</label>
+        <input type="mail" value={{dados.email}} name="email">
+
+        <label for="cargo">Cargo</label>
+        <input type="text" value={{dados.cargo}} name="cargo">
+
+        <label for="endereco">Endereco</label>
+        <input type="text" value={{dados.endereco}} name="endereco">
+
+        <label for="salario">Salario</label>
+        <input type="number" value={{dados.salario}} name="salario">
+
+        <label for="status">Status</label>
+        <input type="text" value={{dados.status}} name="status">
+
+        <label for="dataDemissao">Data Demissao</label>
+        <input type="text" value={{dados.dataDemissao}} name="dataDemissao">
+
+        {{!-- <a href="/remover/{{dados.id}}">Remover</a> --}}
+        <a href="/dashboard/funcionarios">Cancelar</a>
+        <input type="submit" value="Editar" class="submitBtn">
+    </form>
+
 </main>

@@ -30,6 +30,33 @@ body {
     object-fit: cover;
 }
 
+
+
+/* ========================= MAIN ========================= */
+
+main {
+    width: 90%;
+    /* max-width: 960px; */
+    margin: 5rem auto;
+}
+
+.form {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 380px;
+}
+
+.form input{
+    display: block;
+    width: 100%;
+}
+
+.form input:not(input:last-child) {
+    font-size: 16px;
+    padding: 6px 6px 6px 10px;
+    margin-bottom: 16px;
+}
+
 .submitBtn {
     width: 100%;
     text-align: center;
@@ -39,14 +66,6 @@ body {
     cursor: pointer;
     border: none;
     background-color: #9acdf7;
-}
-
-/* ========================= MAIN ========================= */
-
-main {
-    width: 90%;
-    /* max-width: 960px; */
-    margin: 5rem auto;
 }
 
 

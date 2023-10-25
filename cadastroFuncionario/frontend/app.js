@@ -89,15 +89,54 @@ app.post('/cadastrarfuncionario', function (req, res) {
         .then(res.redirect('/dashboard/funcionarios'))
 })
 
-app.get('/dashboard/editarFuncionario', function(req, res) {
-    res.render('editarFuncionario',
-    {
-        layout: 'dashboard',
-        title: 'Editar Funcionario | Cadastrinator',
-        style: 'editarFuncionario',
-        script: 'editarFuncionario'
-    })
+app.get('/dashboard/editarFuncionario/:id', function(req, res) {
+
+    let id = req.params.id
+
+    fetch('http://localhost:3000/funcionarios/'+id, {method:'GET'})
+    .then(resp => resp.json())
+    .then(resp => res.render('editarFuncionario',
+        {
+            dados: resp,
+            layout: 'dashboard',
+            title: 'Editar Funcionario | Cadastrinator',
+            style: 'editarFuncionario',
+            script: 'editarFuncionario'
+        }
+    ))
 })
 
+app.post('/editar', function(req, res){
+
+    let id = req.body.id
+    let nome = req.body.nome
+    let idade = req.body.idade
+    let email = req.body.email
+    let cargo = req.body.cargo
+    let endereco = req.body.endereco
+    let salario = req.body.salario
+    let status = req.body.status
+    let dataAdmissao = req.body.dataAdmissao
+    let dataDemissao = req.body.dataDemissao
+
+    let dados = {
+        'nome': nome,
+        'idade': idade,
+        'email': email,
+        'cargo': cargo,
+        'endereco': endereco,
+        'salario': salario,
+        'status': status,
+        'dataAdmissao': dataAdmissao,
+        'dataDemissao': dataDemissao
+    }
+
+    fetch('http://localhost:3000/funcionarios/'+id,     {   
+        method:'PUT',
+        body: JSON.stringify(dados),
+        headers: {'Content-Type':'application/json'}
+    })
+    .then(res.redirect('/dashboard/funcionarios'))
+})
 
 app.listen('8080')
