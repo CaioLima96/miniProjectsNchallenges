@@ -4,7 +4,7 @@ let tableTr = document.getElementsByClassName('tableContainer')[0].getElementsBy
 let sidemain = document.getElementsByClassName('sideMain')[0]
 
 
-if (tableTr.length < 8) {
+if (tableTr.length < 11) {
     sidemain.classList.add('sideMainHeight')
     console.log('tr: ', tableTr.length)
 } else {
@@ -15,11 +15,11 @@ if (tableTr.length < 8) {
 
 
 
-async function api() {
+// async function api() {
 
-    let data = await fetch(`http://localhost:3000/funcionarios`).then(res => res.json())
+//     let data = await fetch(`http://localhost:3000/funcionarios`).then(res => res.json())
 
-    console.log(data)
-}
+//     console.log(data)
+// }
 
-api()
+// api()

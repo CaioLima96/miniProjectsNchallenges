@@ -35,6 +35,8 @@ app.get('/', function (req, res) {
 
 app.get('/dashboard/funcionarios', function (req, res) {
 
+
+
     fetch('http://localhost:3000/funcionarios', { method: 'GET' })
         .then(resp => resp.json())
         .then(resp => res.render('funcionarios',
@@ -78,7 +80,8 @@ app.post('/cadastrarfuncionario', function (req, res) {
         'endereco': endereco,
         'salario': salario,
         'status': status,
-        'dataAdmissao': dataAdmissao
+        'dataAdmissao': dataAdmissao,
+        'dataDemissao': '---'
     }
 
     fetch('http://localhost:3000/funcionarios', {
@@ -108,35 +111,41 @@ app.get('/dashboard/editarFuncionario/:id', function(req, res) {
 
 app.post('/editar', function(req, res){
 
-    let id = req.body.id
-    let nome = req.body.nome
-    let idade = req.body.idade
-    let email = req.body.email
-    let cargo = req.body.cargo
-    let endereco = req.body.endereco
-    let salario = req.body.salario
-    let status = req.body.status
-    let dataAdmissao = req.body.dataAdmissao
-    let dataDemissao = req.body.dataDemissao
+    // let id = req.body.id
+    // let nome = req.body.nome
+    // let idade = req.body.idade
+    // let email = req.body.email
+    // let cargo = req.body.cargo
+    // let endereco = req.body.endereco
+    // let salario = req.body.salario
+    // let status = req.body.status
+    // let dataAdmissao = req.body.dataAdmissao
+    // let dataDemissao = req.body.dataDemissao
 
-    let dados = {
-        'nome': nome,
-        'idade': idade,
-        'email': email,
-        'cargo': cargo,
-        'endereco': endereco,
-        'salario': salario,
-        'status': status,
-        'dataAdmissao': dataAdmissao,
-        'dataDemissao': dataDemissao
-    }
+    const {id, nome, idade, email, cargo, endereco, salario, status, dataAdmissao, dataDemissao} = req.body
+
+    // let dados = {
+    //     'nome': nome,
+    //     'idade': idade,
+    //     'email': email,
+    //     'cargo': cargo,
+    //     'endereco': endereco,
+    //     'salario': salario,
+    //     'status': status,
+    //     'dataAdmissao': dataAdmissao,
+    //     'dataDemissao': dataDemissao
+    // }
+
+    let dados = {id, nome, idade, email, cargo, endereco, salario, status, dataAdmissao, dataDemissao}
+
+    // console.log('edit: ',dados)
 
     fetch('http://localhost:3000/funcionarios/'+id,     {   
         method:'PUT',
         body: JSON.stringify(dados),
         headers: {'Content-Type':'application/json'}
     })
-    .then(res.redirect('/dashboard/funcionarios'))
+    .then(res.redirect('/dashboard/funcionarios'), console.log('dados: ',dados))
 })
 
 app.listen('8080')
