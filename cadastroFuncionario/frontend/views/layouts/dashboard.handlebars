@@ -16,7 +16,7 @@
 
     <header>
         <div class="navMenuLogo">
-            
+
             <div class='imgContainer'><img src="../../img/icons/skull.png" alt="Logo" style="width: 32px;"></div>
             <p>Cadastrinator</p>
 
@@ -29,48 +29,92 @@
         </div>
     </header>
 
-    <div class="sideMain">
+    <div class="container">
 
-        <div class="sideBar">
+        {{!-- <div class="sideBar">
 
-            <nav class="navMenu">
 
-                <div class="user">
 
-                    <div style="width: 40px; height: 40px;" class='imgContainer'>
-                        <img src="../../img/icons/maleUser.png" alt="Male User">
-                    </div>
-                    
-                    <div>
-                        <p>Fulano</p>
-                        <p>Admin</p>
-                        <p>fulano@gmail.com</p>
-                    </div>
+        </div> --}}
 
+        <nav class="navMenu sideBar">
+
+            <div class="user">
+
+                <div style="width: 40px; height: 40px;" class='imgContainer'>
+                    <img src="../../img/icons/maleUser.png" alt="Male User">
                 </div>
 
-                <hr>
+                <div>
+                    <p>Fulano</p>
+                    <p>Admin</p>
+                    <p>fulano@gmail.com</p>
+                </div>
 
-                <ul class="navMenuList">
-                    <li><a href="/dashboard/funcionarios">Funcionários</a></li>
-                    <li><a href="/dashboard/cadastrarfuncionario">Cadastrar Funcionário</a></li>
-                </ul>
+            </div>
 
-                <span style="flex: 1;"></span>
+            <hr>
 
-                <ul>
-                    <li><a href="/configuracoes">Configuração</a></li>
-                    <li><a href="/ajuda">Ajuda</a></li>
-                    <li><a href="/">Sair</a></li>
-                </ul>
+            <ul class="navMenuList">
+                <li><a href="/dashboard/funcionarios">Funcionários</a></li>
+                <li><a href="/dashboard/cadastrarfuncionario">Cadastrar Funcionário</a></li>
+            </ul>
 
-            </nav>
+            <span style="flex: 1;"></span>
 
-        </div>
+            <ul>
+                <li><a href="/configuracoes">Configuração</a></li>
+                <li><a href="/ajuda">Ajuda</a></li>
+                <li><a href="/">Sair</a></li>
+            </ul>
 
+        </nav>
 
         {{{body}}}
+
     </div>
+
+    {{!-- <div style="display: flex; flex: 1;">
+        <div class="sideBar" style="width: 20%; max-width: 236px">
+
+            
+        </div>
+
+        <nav class="navMenu sideBar" >
+
+            <div class="user">
+
+                <div style="width: 40px; height: 40px;" class='imgContainer'>
+                    <img src="../../img/icons/maleUser.png" alt="Male User">
+                </div>
+
+                <div>
+                    <p>Fulano</p>
+                    <p>Admin</p>
+                    <p>fulano@gmail.com</p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <ul class="navMenuList">
+                <li><a href="/dashboard/funcionarios">Funcionários</a></li>
+                <li><a href="/dashboard/cadastrarfuncionario">Cadastrar Funcionário</a></li>
+            </ul>
+
+            <span style="flex: 1;"></span>
+
+            <ul>
+                <li><a href="/configuracoes">Configuração</a></li>
+                <li><a href="/ajuda">Ajuda</a></li>
+                <li><a href="/">Sair</a></li>
+            </ul>
+
+        </nav>
+
+        {{{body}}}
+    </div> --}}
 
     <footer>
 
@@ -101,7 +145,8 @@
 
 
     <script src="../../js/global.js"></script>
-    {{#if script}}<script src="../../js/{{script}}.js"></script> {{^}} "" {{/if}}
+    {{#if script}}
+    <script src="../../js/{{script}}.js"></script> {{^}} "" {{/if}}
 </body>
 
 </html>

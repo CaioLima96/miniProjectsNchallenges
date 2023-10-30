@@ -33,40 +33,20 @@ header>div:last-child {
     color: black;
 }
 
-/* .navMenuLogo a {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 1.563rem;
-    color: black;
-} */
-
 .navMenuLogo div {
     margin-right: 0.438rem
 }
 
-/* .navMenuLogo p:hover {
-    font-style: italic;
-} */
-
 
 /* ========================= NAVBAR ========================= */
 
-.sideBar {
-    /* width: 100%;
-    max-width: 236px; */
-    /* width: 270px; */
-    width: 236px;
-    /* margin-right: 1.25rem */
+.container {
+    display: flex;
+    flex: 1;
 }
 
-.sideMain {
-    display: flex; 
-    /* height: 100%; */
-}
-
-.sideMainHeight {
-    height: 100%;
+.navMenuBtn:hover {
+    cursor: pointer;
 }
 
 .navMenu {
@@ -74,6 +54,9 @@ header>div:last-child {
     flex-direction: column;
     height: 100%;
     background-color: #dfebf4;
+
+
+    width: 236px;
 }
 
 .navMenu .user {
@@ -147,7 +130,6 @@ header>div:last-child {
 }
 
 
-
 @media (max-width: 600px) {
 
     header {
@@ -191,6 +173,6 @@ header>div:last-child {
     }
 
     .hideShowNavMenu {
-        display: block !important;
+        display: flex !important;
     }
 }
