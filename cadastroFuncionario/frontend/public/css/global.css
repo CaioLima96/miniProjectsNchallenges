@@ -62,12 +62,12 @@ main {
     max-width: 380px;
 }
 
-.form input{
+.form input, .form select{
     display: block;
     width: 100%;
 }
 
-.form input:not(input:last-child) {
+.form input:not(input:last-child), .form select {
     font-size: 16px;
     padding: 6px 6px 6px 10px;
     margin-bottom: 16px;

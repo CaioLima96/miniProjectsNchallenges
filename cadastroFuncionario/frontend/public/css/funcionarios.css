@@ -118,3 +118,7 @@ table tr td:nth-child(8), table tr td:nth-child(9) {
 .tableContainer td:last-child, .tableContainer th:last-child {
     padding: 0 14px 0 18px;
 }
+
+.tableContainer tbody tr td:nth-child(8) {
+    text-transform: capitalize;
+}

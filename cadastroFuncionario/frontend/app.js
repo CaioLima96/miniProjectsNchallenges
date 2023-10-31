@@ -66,6 +66,7 @@ app.post('/cadastrarfuncionario', function (req, res) {
     let nome = req.body.nome
     let idade = req.body.idade
     let email = req.body.email
+    let telefone = req.body.telefone
     let cargo = req.body.cargo
     let endereco = req.body.endereco
     let salario = req.body.salario
@@ -76,6 +77,7 @@ app.post('/cadastrarfuncionario', function (req, res) {
         'nome': nome,
         'idade': idade,
         'email': email,
+        'telefone': telefone,
         'cargo': cargo,
         'endereco': endereco,
         'salario': salario,

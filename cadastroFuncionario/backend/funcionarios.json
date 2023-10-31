@@ -178,6 +178,31 @@
       "dataAdmissao": "16",
       "dataDemissao": "---",
       "id": 16
+    },
+    {
+      "nome": "4",
+      "idade": "4",
+      "email": "4",
+      "telefone": "(4",
+      "cargo": "4",
+      "endereco": "4",
+      "salario": "550",
+      "status": "4",
+      "dataAdmissao": "4",
+      "dataDemissao": "---",
+      "id": 17
+    },
+    {
+      "id": 18,
+      "nome": "55",
+      "idade": "55",
+      "email": "55",
+      "cargo": "55",
+      "endereco": "55",
+      "salario": "55",
+      "status": "demitido",
+      "dataAdmissao": "55",
+      "dataDemissao": "---"
     }
   ]
 }
