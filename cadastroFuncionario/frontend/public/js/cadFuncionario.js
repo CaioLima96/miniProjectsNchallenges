@@ -18,7 +18,7 @@ function inputCharLimiter (inp, num, errMsg) {
         })
     })
 }
-inputCharLimiter(inputNome, 8, 'Somente entre 4 e 50 caracteres')
+inputCharLimiter(inputNome, 50, 'Somente entre 4 e 50 caracteres')
 inputCharLimiter(inputIdade, 1, 'Somente 2 caracteres')
 inputCharLimiter(inputEmail, 39, 'Somente entre 4 e 39 caracteres')
 
@@ -75,4 +75,67 @@ VMasker(tel).maskPattern(telMask[0]);
 tel.addEventListener('input', inputHandler.bind(undefined, telMask, 13), false);
 
 
-// let inputEvents = ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop", "focusout"]
+
+// let allInputs = document.querySelectorAll('form input:not(input[type = submit])')
+
+// console.log(allInputs)
+// console.log(allInputs.length)
+
+// for (let input of allInputs) {
+
+//     if(input.value = '') {
+//         console.log('vazio')
+//     }
+// }
+
+// for (let i = 0; i < allInputs.length; i++) {
+
+//     console.log('all: ', allInputs[i].value)
+
+//     allInputs[i].style.border = '2px solid red'
+
+//     if(allInputs[i].value = '') {
+//         console.log('vazio')
+//     }
+// }
+
+let allInputs2 = document.querySelectorAll('input')
+let submitBtn = document.getElementsByClassName('submitBtn')[0]
+console.log(allInputs2)
+console.log('btn: ', submitBtn)
+
+let inputValidator = {
+    "nome": false,
+    "idade": false,
+    "email": false,
+    "telefone": false,
+    "cargo": false,
+    "endereco": false,
+    "salario": false,
+    "status": false,
+    "dataAdmissao": false,
+  }
+
+allInputs2.forEach((input) => {
+    input.addEventListener('input', (event) => {
+      let name = event.target.getAttribute('name');
+      if (event.target.value.length > 0) {
+        inputValidator[name] = true;
+      } else {
+        inputValidator[name] = false;
+      };
+  
+      let allTrue = Object.keys(inputValidator).every((item) => {
+        return inputValidator[item] === true
+      });
+  
+      if (allTrue) {
+        submitBtn.disabled = false;
+        submitBtn.style.border = '2px solid red'
+        console.log('foi')
+      } else {
+        submitBtn.disabled = true;
+        submitBtn.style.border = '2px solid red'
+      }
+    })
+  })

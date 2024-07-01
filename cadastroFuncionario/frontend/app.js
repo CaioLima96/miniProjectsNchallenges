@@ -74,10 +74,10 @@ app.post('/cadastrarfuncionario', function (req, res) {
     let dataAdmissao = req.body.dataAdmissao
 
     let dados = {
-        'nome': nome,
+        'nome': `${nome ? nome : '---'}`,
         'idade': idade,
         'email': email,
-        'telefone': telefone,
+        'telefone': `${telefone ? telefone : '---'}`,
         'cargo': cargo,
         'endereco': endereco,
         'salario': salario,
@@ -125,18 +125,6 @@ app.post('/editar', function(req, res){
     // let dataDemissao = req.body.dataDemissao
 
     const {id, nome, idade, email, cargo, endereco, salario, status, dataAdmissao, dataDemissao} = req.body
-
-    // let dados = {
-    //     'nome': nome,
-    //     'idade': idade,
-    //     'email': email,
-    //     'cargo': cargo,
-    //     'endereco': endereco,
-    //     'salario': salario,
-    //     'status': status,
-    //     'dataAdmissao': dataAdmissao,
-    //     'dataDemissao': dataDemissao
-    // }
 
     let dados = {id, nome, idade, email, cargo, endereco, salario, status, dataAdmissao, dataDemissao}
 
